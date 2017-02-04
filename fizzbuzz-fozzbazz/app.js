@@ -26,14 +26,14 @@ angular.module('app', ['ngRoute'])
       $scope.display = 0;
       $scope.increment=function(){
         $scope.display=$scope.ctr
-        if ($scope.ctr%3==0){
+        if ($scope.ctr%3===0){
           console.log($scope.ctr%3==0)
           $scope.display="FIZZ"
         }
          if($scope.ctr%5===0){
           $scope.display="BUZZ"
         }
-         if($scope.ctr %5==0 && $scope.ctr %3==0){
+         if($scope.ctr %5===0 && $scope.ctr %3===0){
           console.log($scope.ctr %5)
           $scope.display="FIZZBUZZ"
         }
@@ -46,14 +46,14 @@ angular.module('app', ['ngRoute'])
       $scope.display = 0;
       $scope.increment=function(){
         $scope.display=$scope.ctr
-        if ($scope.ctr%4==0){
+        if ($scope.ctr%4===0){
           console.log($scope.ctr%4==0)
           $scope.display="FOZZ"
         }
          if($scope.ctr%6===0){
           $scope.display="BAZZ"
         }
-         if($scope.ctr %4==0 && $scope.ctr %6==0){
+         if($scope.ctr %4===0 && $scope.ctr %6===0){
           console.log($scope.ctr %6)
           $scope.display="FOZZBAZZ"
         }
